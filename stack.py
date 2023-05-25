@@ -17,14 +17,23 @@ class Stack:
         return False
 
 
-    def size():
-        pass
+    def size(self):
+        node_count=0
+        iternode = self.head
+        if self.isempty():
+            return node_count
+ 
+        while(iternode != None):
+            node_count+=1
+            iternode = iternode.next
+        return node_count
 
 
     def top(self):
         if self.is_empty():
             return None
         
+        return self.head.data
 
     def push(self, data):
         if self.head == None:
