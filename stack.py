@@ -21,8 +21,13 @@ class Stack:
     def top():
         pass
 
-    def push(a):
-        pass
+    def push(self, data):
+        if self.head == None:
+            self.head = None(data)
+        else:
+            new_node = Node(data)
+            new_node.next = self.head
+            self.head = new_node
 
     def pop():
         pass
