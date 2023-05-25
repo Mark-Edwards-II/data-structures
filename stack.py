@@ -20,7 +20,7 @@ class Stack:
     def size(self):
         node_count=0
         iternode = self.head
-        if self.isempty():
+        if self.is_empty():
             return node_count
  
         while(iternode != None):
@@ -37,7 +37,7 @@ class Stack:
 
     def push(self, data):
         if self.head == None:
-            self.head = None(data)
+            self.head = Node(data)
         else:
             new_node = Node(data)
             new_node.next = self.head
@@ -54,4 +54,20 @@ class Stack:
         popped_node.next = None
         return  popped_node.data
 
+    def display(self):
+ 
+        iternode = self.head
+        if self.is_empty():
+            print("Empty")
+ 
+        else:
+ 
+            while(iternode != None):
+ 
+                print(iternode.data, end = "")
+                iternode = iternode.next
+                if(iternode != None):
+                    print(" -> ", end = "")
+            print("\n")
+            return
 
