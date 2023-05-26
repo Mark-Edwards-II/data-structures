@@ -1,5 +1,5 @@
 from stack import Stack
-# A list would be much more simple, but would not help convey an understanding of how a stack is used when checking for balance.
+# A list would be much more simple.
 
 def is_balanced(brackets: str):
     """
